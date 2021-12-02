@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="icon">Lost </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fa fa-times close-btn"></i>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">Profil</a>
+            <a href="#">Barang</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="btn">
+            <i class="fa fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+        <h1>LOST &<br>FOUND</h1>
+    </section>
+
+    <section class="section2">
+        <h2>Info</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae, sunt hic expedita ad eum. Commodi quidem tempore placeat, dolore, eligendi nesciunt quas animi delectus cum corporis sed. Nulla, vero!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consequatur cupiditate unde dolorem, saepe porro reprehenderit perferendis accusamus eveniet odio impedit quidem corporis minus eius exercitationem. Perspiciatis omnis dolor eaque.</p>
+    </section>
+
+    <script type="text/javascript">
+        //effect on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //responsive navigation bar
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        })
+    </script>
+
+</body>
+
+</html>
