@@ -1,0 +1,27 @@
+/* Content */
+
+.content-top{
+    margin-top: 80px;
+}
+
+ .content h1{
+     font-size: 30px;
+     letter-spacing: 3px;
+ }
+
+ .content .title-p p{
+     padding-top: 20px;
+     padding-bottom: 20px;
+     letter-spacing: 1px;
+     line-height: 25px;
+     padding-right: 70px;
+ }
+
+ .container-lf{
+     width: 950px;
+     height: 400px;
+     background-color: steelblue;
+     border-radius: 20px;
+     margin: 20px;
+ }
+/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
