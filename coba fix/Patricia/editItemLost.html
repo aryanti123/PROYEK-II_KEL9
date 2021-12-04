@@ -30,9 +30,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
+                <img src="/img/png_del.png" alt="..." width="50" class="mr-3 rounded-circle img-thumbnail shadow-sm">
                 <div class="sidebar-brand-text mx-3">LOST & FOUND</div>
             </a>
 
@@ -48,14 +46,15 @@
 
             <!-- Nav Item - Post Collapse Menu -->
             <li class="nav-item">
+                
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-fw fa-plus"></i>
                     <span>Post</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Post:</h6>
-                        <a class="collapse-item" href="lostform.html">Lost</a>
+                        <a class="collapse-item active" href="lostform.html">Lost</a>
                         <a class="collapse-item" href="foundform.html">Found</a>
                     </div>
                 </div>
@@ -69,7 +68,7 @@
             </li>
 
             <!-- Nav Item - Profile -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="profil.html">
                     <i class="fas fa-fw fa-user"></i>
                     <span>Profile</span></a>
@@ -220,7 +219,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Profil</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Form Lost</h1>
                     </div>
 
                     <div class="dropdown-divider"></div>
@@ -238,35 +237,51 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Nim</label>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Seen Location</label>
                                 <div class="col-sm-6">
-                                    <input type="nim" class="form-control" id="inputPassword3">
+                                    <input type="last seen location" class="form-control" id="inputPassword3">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Prodi</label>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Seen Date</label>
                                 <div class="col-sm-6">
-                                    <input type="prodi" class="form-control" id="inputPassword3">
+                                    <input type="date" class="form-control" id="colFormLabel" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                                <label for="colFormLabel" class="col-sm-2 col-form-label">Description</label>
                                 <div class="col-sm-6">
-                                    <input type="email" class="form-control" id="inputPassword3">
+                                    <textarea class="form-control" placeholder="Description" id="floatingTextarea"></textarea>
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number</label>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Founder</label>
                                 <div class="col-sm-6">
-                                    <input type="phone number " class="form-control " id="inputPassword3 ">
+                                    <input type="Founder" class="form-control" id="inputPassword3">
                                 </div>
                             </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Status</label>
+                                <div class="col-sm-6">
+                                    <input type="Status" placeholder="True/False" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="colFormLabel" class="col-sm-2 col-form-label">Image</label>
+                                <div class="col-sm-6">
+                                    <input type="file" class="form-control" id="inputGroupFile01">    
+                                </div>
+                            </div>
+                            
                             <div class="d-grid gap-2 d-md-flex col-8 justify-content-md-end">
-                                <a class="btn btn-success" href="profil.html" role="button">Simpan</a>
+                                <button class="btn btn-success " type="button ">Save</button>
                             </div>
                             </form>
+                            <br>
                         </div>
+
                     </div>
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -277,7 +292,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Lost and Found Copyright &copy; Kelompok 9 Proyek II Pabwe. All rights reserved.</span>
+                        <span>Copyright &copy; Your Website 2021</span>
                     </div>
                 </div>
             </footer>
