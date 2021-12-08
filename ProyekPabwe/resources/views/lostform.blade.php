@@ -60,13 +60,13 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                     <a class="nav-link" href="{{url('lostform')}}">
                         <i class="fas fa-fw fa-history"></i>
                         <span>Lost</span></a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{url('foundform')}}">
                         <i class="fas fa-fw fa-history"></i>
                         <span>Found</span></a>
@@ -91,7 +91,6 @@
                     <i class="fas fa-fw fa-question-circle"></i>
                     <span>Help</span></a>
             </li>
-
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -248,7 +247,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Form Found</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Lost Found</h1>
                     </div>
 
                     <div class="dropdown-divider"></div>
@@ -266,13 +265,13 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Location Found</label>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Seen Location</label>
                                 <div class="col-sm-6">
                                     <input type="last seen location" class="form-control" id="inputPassword3">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Date Found</label>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Seen Date</label>
                                 <div class="col-sm-6">
                                     <input type="date" class="form-control" id="colFormLabel" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
                                 </div>
@@ -280,7 +279,7 @@
                             <div class="row mb-3">
                                 <label for="colFormLabel" class="col-sm-2 col-form-label">Description</label>
                                 <div class="col-sm-6">
-                                    <textarea class="form-control" id="floatingTextarea" placeholder="Description"></textarea>
+                                    <textarea class="form-control" placeholder="Description" id="floatingTextarea"></textarea>
                                 </div>
                             </div>
                             <div class="row mb-3">

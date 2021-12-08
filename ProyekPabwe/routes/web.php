@@ -23,6 +23,7 @@ Route::get('login', 'App\Http\Controllers\AuthController@index')->name('login');
 Route::post('proses_login', 'App\Http\Controllers\AuthController@proses_login')->name('proses_login');
 Route::get('register', 'App\Http\Controllers\AuthController@register')->name('register');
 Route::get('dashboard', 'App\Http\Controllers\AuthController@dashboard')->name('dashboard');
+Route::get('post', 'App\Http\Controllers\AuthController@post')->name('post');
 Route::get('lostform', 'App\Http\Controllers\AuthController@lostform')->name('lostform');
 Route::get('foundform', 'App\Http\Controllers\AuthController@foundform')->name('foundform');
 Route::get('history', 'App\Http\Controllers\AuthController@history')->name('history');
@@ -32,6 +33,7 @@ Route::get('allItemLost', 'App\Http\Controllers\AuthController@allItemLost')->na
 Route::get('allItemFound', 'App\Http\Controllers\AuthController@allItemFound')->name('allItemFound');
 Route::get('editItemLost', 'App\Http\Controllers\AuthController@editItemLost')->name('editItemLost');
 Route::get('editItemFound', 'App\Http\Controllers\AuthController@editItemFound')->name('editItemFound');
+Route::get('pages', 'App\Http\Controllers\AuthController@pages')->name('pages');
 Route::get('logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
 
 Route::group(['middleware' => ['auth']], function () {

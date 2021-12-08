@@ -77,26 +77,38 @@
                 <hr class="sidebar-divider my-0">
 
                 <!-- Nav Item - Home -->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{url('dashboard')}}">
                         <i class="fas fa-fw fa-home"></i>
                         <span>Home</span></a>
                 </li>
 
                 <!-- Nav Item - Post Collapse Menu -->
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link collapsed" href="{{url('post')}}" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-plus"></i>
                         <span>Post</span>
                     </a>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <!-- <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Post:</h6>
                             <a class="collapse-item" href="{{url('lostform')}}">Lost</a>
                             <a class="collapse-item" href="{{url('foundform')}}">Found</a>
                         </div>
-                    </div>
+                    </div> -->
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('lostform')}}">
+                        <i class="fas fa-fw fa-history"></i>
+                        <span>Lost</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('foundform')}}">
+                        <i class="fas fa-fw fa-history"></i>
+                        <span>Found</span></a>
                 </li>
 
                 <!-- Nav Item - History -->
@@ -122,7 +134,7 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="{{url('pages')}}" data-toggle="collapse" data-target="#collapsePages"
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                         aria-expanded="true" aria-controls="collapsePages">
                         <i class="fas fa-fw fa-folder"></i>
                         <span>Pages</span>
@@ -137,7 +149,6 @@
                         </div>
                     </div>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
 

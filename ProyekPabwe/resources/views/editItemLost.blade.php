@@ -39,47 +39,65 @@
 
             <!-- Nav Item - Home -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-home"></i>
-                    <span>Home</span></a>
-            </li>
+                    <a class="nav-link" href="{{url('dashboard')}}">
+                        <i class="fas fa-fw fa-home"></i>
+                        <span>Home</span></a>
+                </li>
 
-            <!-- Nav Item - Post Collapse Menu -->
-            <li class="nav-item">
-                
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-plus"></i>
-                    <span>Post</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Post:</h6>
-                        <a class="collapse-item active" href="lostform.html">Lost</a>
-                        <a class="collapse-item" href="foundform.html">Found</a>
+                <!-- Nav Item - Post Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{url('post')}}" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-plus"></i>
+                        <span>Post</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Post:</h6>
+                            <a class="collapse-item" href="{{url('lostform')}}">Lost</a>
+                            <a class="collapse-item" href="{{url('foundform')}}">Found</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <!-- Nav Item - History -->
-            <li class="nav-item">
-                <a class="nav-link" href="history.html">
-                    <i class="fas fa-fw fa-history"></i>
-                    <span>History</span></a>
-            </li>
+                <!-- Nav Item - History -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('history')}}">
+                        <i class="fas fa-fw fa-history"></i>
+                        <span>History</span></a>
+                </li>
 
-            <!-- Nav Item - Profile -->
-            <li class="nav-item">
-                <a class="nav-link" href="profil.html">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Profile</span></a>
-            </li>
+                <!-- Nav Item - Profile -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('profil')}}">
+                        <i class="fas fa-fw fa-user"></i>
+                        <span>Profile</span></a>
+                </li>
 
-            <!-- Nav Item - Help -->
-            <li class="nav-item">
-                <a class="nav-link" href="help.html">
-                    <i class="fas fa-fw fa-question-circle"></i>
-                    <span>Help</span></a>
-            </li>
+                <!-- Nav Item - Help -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('help')}}">
+                        <i class="fas fa-fw fa-question-circle"></i>
+                        <span>Help</span></a>
+                </li>
+
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Pages</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Login Screens:</h6>
+                            <a class="collapse-item" href="{{url('login')}}">Login</a>
+                            <a class="collapse-item" href="{{url('register')}}">Register</a>
+                            
+                            
+                        </div>
+                    </div>
+                </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

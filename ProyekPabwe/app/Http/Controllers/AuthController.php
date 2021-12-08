@@ -39,6 +39,10 @@ class AuthController extends Controller
     {
         return view('dashboard');
     }
+    public function post(Request $request)
+    {
+        return view('post');
+    }
     public function lostform(Request $request)
     {
         return view('lostform');
@@ -51,6 +55,10 @@ class AuthController extends Controller
     {
         return view('history');
     }
+    public function profil(Request $request)
+    {
+        return view('profil');
+    }
     public function editItemFound(Request $request)
     {
         return view('editItemFound');
@@ -62,6 +70,10 @@ class AuthController extends Controller
     public function help(Request $request)
     {
         return view('help');
+    }
+    public function pages(Request $request)
+    {
+        return view('pages');
     }
     public function allItemLost(Request $request)
     {

@@ -29,7 +29,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('dashboard')}}">
                 <img src="./img/png_del.png" alt="..." width="50" class="mr-3 shadow-sm">
                 <div class="sidebar-brand-text mx-3">LOST & FOUND</div>
             </a>
@@ -39,14 +39,15 @@
 
             <!-- Nav Item - Home -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{url('dashboard')}}">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Home</span></a>
             </li>
 
             <!-- Nav Item - Post Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="{{url('post')}}" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-plus"></i>
                     <span>Post</span>
                 </a>
@@ -61,24 +62,42 @@
 
             <!-- Nav Item - History -->
             <li class="nav-item">
-                <a class="nav-link" href="history.html">
+                <a class="nav-link" href="{{url('history')}}">
                     <i class="fas fa-fw fa-history"></i>
                     <span>History</span></a>
             </li>
 
             <!-- Nav Item - Profile -->
             <li class="nav-item active">
-                <a class="nav-link" href="profil.html">
+                <a class="nav-link" href="{{url('profil')}}">
                     <i class="fas fa-fw fa-user"></i>
                     <span>Profile</span></a>
             </li>
 
             <!-- Nav Item - Help -->
             <li class="nav-item">
-                <a class="nav-link" href="help.html">
+                <a class="nav-link" href="{{url('help')}}">
                     <i class="fas fa-fw fa-question-circle"></i>
                     <span>Help</span></a>
             </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Pages</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Login Screens:</h6>
+                            <a class="collapse-item" href="{{url('login')}}">Login</a>
+                            <a class="collapse-item" href="{{url('register')}}">Register</a>
+                            
+                            
+                        </div>
+                    </div>
+                </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
