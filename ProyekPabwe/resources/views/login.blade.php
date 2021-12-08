@@ -60,7 +60,7 @@
                                                 @endif
                                         </div>
                                         
-                                        <a href="{{url('login')}}" class="btn btn-primary btn-user btn-block">
+                                        <a href="{{url('dashboard')}}" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                         <hr>
