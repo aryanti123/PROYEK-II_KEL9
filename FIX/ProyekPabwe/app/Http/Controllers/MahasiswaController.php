@@ -79,10 +79,7 @@ class MahasiswaController extends Controller
     {
         $request->validate([
             'fullname' => ['required', 'string'],
-            'nim' => ['required', 'string', 'max:8'],
-            'prodi' => ['required', 'string'],
             'email' => ['required', 'string'],
-            'no_telepon' => ['required', 'numeric'],
         ]);
         
         $query = DB::table('mahasiswa')->where('user_id', Session::get('users_id'))
