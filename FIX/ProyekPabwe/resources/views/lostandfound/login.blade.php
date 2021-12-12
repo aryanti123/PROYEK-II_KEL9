@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('/img/png_del.png') }}" type="image/gif" />
-    <title>Lost and Found - Login</title>
+    <title>Lost and Found</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{url('fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">

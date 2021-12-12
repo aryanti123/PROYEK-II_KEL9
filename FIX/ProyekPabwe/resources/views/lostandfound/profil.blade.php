@@ -158,45 +158,41 @@
                     @endif
 
                     <!-- Content Row -->
-
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12" >
-                            <div class="row mb-3">
-                                <label for="name" class="col-sm-2 col-form-label">Name</label>
-                                <div class="col-sm-6">
-                                    <input type="name" name="fullname" value="{{ $dataMahasiswa-> nama }}" class="form-control" id="name" disabled readonly>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="nim" class="col-sm-2 col-form-label">NIM</label>
-                                <div class="col-sm-6">
-                                    <input type="text" name="nim" value="{{ $dataMahasiswa-> nim }}" class="form-control" id="nim" disabled readonly>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="prodi" class="col-sm-2 col-form-label">Prodi</label>
-                                <div class="col-sm-6">
-                                    <input type="text" name="prodi" value="{{ $dataMahasiswa-> prodi }}" class="form-control" id="prodi" disabled readonly>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="email" class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-6">
-                                    <input type="email" name="email" value="{{ $dataMahasiswa-> email }}" class="form-control" id="email" disabled readonly>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="phonenumber" class="col-sm-2 col-form-label">Phone Number</label>
-                                <div class="col-sm-6">
-                                    <input type="text" name="no_telepon" value="{{ $dataMahasiswa-> no_telepon }}" class="form-control " id="phonenumber" disabled readonly>
-                                </div>
-                            </div>
-                            <div class="d-grid gap-2 d-md-flex col-8 justify-content-md-end">
-                                <a class="btn btn-success" href="{{url('lostandfound/editprofil')}}" role="button">Edit</a>
+                    <form class="user">
+                        <div class="form-group row mb-3">
+                            <label for="name" class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-6">
+                            <input type="name" name="fullname" value="{{ $dataMahasiswa-> nama }}" class="form-control" id="name" disabled readonly>
                             </div>
                         </div>
-
-                    </div>
+                        <div class="form-group row mb-3">
+                            <label for="nim" class="col-sm-3 col-form-label">NIM</label>
+                            <div class="col-sm-6">
+                            <input type="text" name="nim" value="{{ $dataMahasiswa-> nim }}" class="form-control" id="nim" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <label for="prodi" class="col-sm-3 col-form-label">Prodi</label>
+                            <div class="col-sm-6">
+                            <input type="text" name="prodi" value="{{ $dataMahasiswa-> prodi }}" class="form-control" id="prodi" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <label for="email" class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-6">
+                            <input type="email" name="email" value="{{ $dataMahasiswa-> email }}" class="form-control" id="email" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <label for="no_telepon" class="col-sm-3 col-form-label">Phone Number</label>
+                            <div class="col-sm-6">
+                            <input type="text" name="no_telepon" value="{{ $dataMahasiswa-> no_telepon }}" class="form-control " id="phonenumber" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="d-md-flex col-9 justify-content-md-end">
+                            <a class="btn btn-success" href="{{url('lostandfound/editprofil')}}" role="button">Edit</a>
+                        </div>
+                    </form>
                 </div>
                 <!-- /.container-fluid -->
 

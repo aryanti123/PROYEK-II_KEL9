@@ -189,7 +189,7 @@
                         <div class="form-group row mb-3">
                             <label for="picture" class="col-sm-3 col-form-label">Image</label>
                             <div class="col-sm-6">
-                                <input type="file" name="picture" class="form-control" id="picture">    
+                                <input type="file" name="picture" required class="form-control" id="picture">    
                             </div>
                         </div>
                         
